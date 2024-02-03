@@ -1,0 +1,143 @@
+@import './colors';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-padding-top: 102px;
+	overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgb(255, 255, 255);
+	border-radius: 0;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px rgba(255, 255, 255, 0);
+	border-radius: 0;
+}
+
+body {
+	background-color: #ffffff;
+	font-family: 'Maven Pro', sans-serif;
+	color: #000000;
+	font-size: 30px;
+	overflow-x: hidden;
+}
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+.underline {
+	width: 60px;
+	height: 3px;
+	background-color: $pink-color;
+	margin: 0 auto 40px;
+}
+
+.logo {
+	height: 100px;
+}
+
+.gallery .container {
+	display: flex;
+	justify-content: center;
+}
+.gallery a {
+	background-color: $pink-color;
+	border-radius: 18px;
+	padding: 10px 15px;
+	color: rgb(19, 18, 18);
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+.gallery a:hover {
+	color: white;
+}
+
+/* fundamenty */
+
+.box {
+	.photos {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		.photo-size {
+			z-index: 0;
+			height: 300px;
+			width: 500px;
+			margin: 30px 0px;
+			object-fit: cover;
+			transition: transform 0.2s;
+		}
+
+		.photo-size:hover {
+			transform: scale(1.2);
+		}
+	}
+}
+
+footer {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-color: white;
+}
+footer h3 {
+	color: black;
+	font-size: 30px;
+}
+footer p {
+	color: black;
+	margin: 10px 0;
+	font-size: 20px;
+}
+footer .Contractor {
+	font-size: 10px;
+}
+
+.shadow-nav-color {
+	color: black;
+}
+
+.fa-bars:before,
+.fa-navicon:before {
+	color: $pink-color;
+}
+
+@media (min-width: 992px) {
+	.navbar-expand-lg .navbar-collapse {
+		display: flex !important;
+		flex-basis: auto;
+		justify-content: center;
+	}
+
+	.box .photos .photo-size {
+		height: 700px;
+		width: 1000px;
+	}
+}
+
+@media (max-width: 750px) {
+	.box .photos .photo-size {
+		height: 250px;
+		width: 350px;
+	}
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TakIn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/c82741e095.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="98">
+
+
+
+
+
+    <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100 py-2 shadow-bg">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html"><img class="logo" src="./img/logotakin.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto ">
+
+
+
+                    <a class="nav-link" href="#aboutus">O nas</a>
+                    <a class="nav-link" href="#offers">Oferta</a>
+                    <a class="nav-link" href="#form">Wycena</a>
+                    <a class="nav-link" href="/gallery.html">Galeria</a>
+                    <a class="nav-link" href="#contact">kontakt</a>
+
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <header>
+        <div id="home" class="hero-img">
+            <div class="hero-shadow"></div>
+            <div class="hero-text">
+                <h1 data-aos="fade-up" data-aos-delay="200">Witaj w tak<span>in</span></h1>
+                <p data-aos="fade-up" data-aos-delay="400">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <a data-aos="fade-up" data-aos-delay="600" href="#aboutus" type="button"
+                    class="btn btn-outline-light">poznaj
+                    nas</a>
+            </div>
+            <a href="#aboutus" type="button"><i class="fa-solid fa-chevron-down bounce-top"></i></a>
+
+        </div>
+    </header>
+
+    <main>
+        <section id="aboutus" class="aboutus py-5">
+            <div class="container">
+                <h2>o nas</h2>
+                <div class="underline"></div>
+
+                <div class="row">
+                    <div class="aboutus-hover text-center" data-aos="zoom-in" data-aos-delay="100">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim exercitationem quasi tenetur
+                            laudantium expedita ipsa similique inventore praesentium iste. Doloribus sed officia facere
+                            asperiores ipsam unde hic esse beatae! Placeat distinctio corrupti architecto ipsam laborum
+                            facere illum perferendis perspiciatis tempore.</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <section id="offers" class="offers py-5 ">
+            <div class="bg-shadow"></div>
+            <div class="container ">
+                <h2>Oferta</h2>
+                <div class="underline"></div>
+
+                <div class="row">
+                    <div class=" text-center aboutus-hero-item" data-aos="zoom-in" data-aos-delay="100">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sequi saepe natus? Labore
+                            blanditiis asperiores neque alias ea esse totam numquam! Saepe, odit velit totam
+                            consequuntur
+                            numquam sint eos minus provident? Quis reprehenderit sunt necessitatibus autem dolores
+                            incidunt
+                            quibusdam exercitationem!</p>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- portfolio -->
+
+
+
+
+        <section id="form" class="form py-5 ">
+            <h2>Wycena</h2>
+            <div class="underline"></div>
+            <div class="container">
+
+                <div class="row justify-content-center">
+
+                    <form action="mail.php" method="post" class="contact-form">
+
+
+                        <div class="contact-box">
+                            <label for="name">Imię:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="contact-box">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="contact-box">
+                            <label for="msg">Wiadomość:</label>
+                            <textarea name="msg" id="msg" required></textarea>
+                        </div>
+
+                        <button>Wyślij</button>
+                        <p class="msg-status"></p>
+
+                        <p class="text-price">Opisz zlecenie jak najdokładniej, abyś mógł zapoznać się ze wstępną
+                            ofertą.
+                        </p>
+
+                    </form>
+
+
+
+
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+        <section id="gallery" class="gallery py-5">
+            <h2>Galeria</h2>
+            <div class="underline"></div>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12 " data-aos="zoom-in" data-aos-delay="200">
+                        <a href="/gallery.html">Przejdź do galerii</a>
+                    </div>
+                </div>
+
+        </section>
+
+
+
+
+
+
+
+        <section id="contact" class="concact py-5">
+            <div class="bg-shadow"></div>
+            <h2>Kontakt</h2>
+            <div class="underline"></div>
+
+            <div class="container">
+
+
+
+                <div class="row text-center concact-us" data-aos="zoom-in" data-aos-delay="300">
+
+
+                    <div class="col-lg-4 concact-item-media order-0 order-lg-1" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="social-media">
+                            <p>ul. Akacjowa 22</p>
+                            <p>34-300 Żywiec</p>
+                            <p>+48 000 000 000</p>
+                            <p>mail@gmail.com</p>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="text-light text-center py-5">
+            <h3 class="mb-0">&copy; <span class="footer__year"></span> | Tak in</h3>
+            <div class="text"></div>
+            <p>WSZELKIE PRAWA ZASTRZEZONE</p>
+            <p class="Contractor ">Radosław Kucia</p>
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
